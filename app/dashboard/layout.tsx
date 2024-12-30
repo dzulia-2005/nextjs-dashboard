@@ -1,18 +1,10 @@
-import SideNav from '@/app/ui/dashboard/sidenav';
-import { Metadata } from 'next';
+import SideNav from "@/app/ui/dashboard/sidenav";
+// export const experimental_ppr = true;
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
-  },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  title: "Dashboard",
 };
-
-export const experimental_ppr = true;
-
-
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
